@@ -33,4 +33,6 @@ class CatalogOfMovies_OMDbTests: XCTestCase {
         }
     }
     
+    let moview = Movie()
+    
 }

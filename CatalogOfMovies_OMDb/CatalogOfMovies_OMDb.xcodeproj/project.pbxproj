@@ -18,6 +18,7 @@
 		C61863BE1E31B5C50025C76E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C61863BC1E31B5C50025C76E /* LaunchScreen.storyboard */; };
 		C61863C91E31B5C50025C76E /* CatalogOfMovies_OMDbTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C61863C81E31B5C50025C76E /* CatalogOfMovies_OMDbTests.swift */; };
 		C61863D41E31B5C50025C76E /* CatalogOfMovies_OMDbUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C61863D31E31B5C50025C76E /* CatalogOfMovies_OMDbUITests.swift */; };
+		C61863E21E32C6A70025C76E /* Movie.swift in Sources */ = {isa = PBXBuildFile; fileRef = C61863E11E32C6A70025C76E /* Movie.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -59,6 +60,7 @@
 		C61863CF1E31B5C50025C76E /* CatalogOfMovies_OMDbUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CatalogOfMovies_OMDbUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		C61863D31E31B5C50025C76E /* CatalogOfMovies_OMDbUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CatalogOfMovies_OMDbUITests.swift; sourceTree = "<group>"; };
 		C61863D51E31B5C50025C76E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C61863E11E32C6A70025C76E /* Movie.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Movie.swift; sourceTree = "<group>"; };
 		E38840F0D99F1907F3288606 /* Pods-CatalogOfMovies_OMDb.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CatalogOfMovies_OMDb.debug.xcconfig"; path = "Pods/Target Support Files/Pods-CatalogOfMovies_OMDb/Pods-CatalogOfMovies_OMDb.debug.xcconfig"; sourceTree = "<group>"; };
 		EA3B4144E68D7CD4791E2904 /* Pods-CatalogOfMovies_OMDbTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CatalogOfMovies_OMDbTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-CatalogOfMovies_OMDbTests/Pods-CatalogOfMovies_OMDbTests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -141,6 +143,7 @@
 			children = (
 				C61863B01E31B5C50025C76E /* AppDelegate.swift */,
 				C61863B21E31B5C50025C76E /* ViewController.swift */,
+				C61863E11E32C6A70025C76E /* Movie.swift */,
 				C61863B41E31B5C50025C76E /* Main.storyboard */,
 				C61863BA1E31B5C50025C76E /* Assets.xcassets */,
 				C61863BC1E31B5C50025C76E /* LaunchScreen.storyboard */,
@@ -454,6 +457,7 @@
 			files = (
 				C61863B31E31B5C50025C76E /* ViewController.swift in Sources */,
 				C61863B11E31B5C50025C76E /* AppDelegate.swift in Sources */,
+				C61863E21E32C6A70025C76E /* Movie.swift in Sources */,
 				C61863B91E31B5C50025C76E /* CatalogOfMovies_OMDb.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -711,6 +715,7 @@
 				C61863DA1E31B5C50025C76E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		C61863DB1E31B5C50025C76E /* Build configuration list for PBXNativeTarget "CatalogOfMovies_OMDbTests" */ = {
 			isa = XCConfigurationList;
@@ -719,6 +724,7 @@
 				C61863DD1E31B5C50025C76E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		C61863DE1E31B5C50025C76E /* Build configuration list for PBXNativeTarget "CatalogOfMovies_OMDbUITests" */ = {
 			isa = XCConfigurationList;
@@ -727,6 +733,7 @@
 				C61863E01E31B5C50025C76E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
