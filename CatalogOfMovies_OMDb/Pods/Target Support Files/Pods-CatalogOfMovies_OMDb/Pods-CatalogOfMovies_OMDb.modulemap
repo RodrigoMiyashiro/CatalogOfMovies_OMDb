@@ -1,0 +1,6 @@
+framework module Pods_CatalogOfMovies_OMDb {
+  umbrella header "Pods-CatalogOfMovies_OMDb-umbrella.h"
+
+  export *
+  module * { export * }
+}
