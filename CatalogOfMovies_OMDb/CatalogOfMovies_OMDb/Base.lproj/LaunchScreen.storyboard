@@ -1,7 +1,12 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11134" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="01J-lp-oVM">
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16C67" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="01J-lp-oVM">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11106"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -16,12 +21,67 @@
                     <view key="view" contentMode="scaleToFill" id="Ze5-6b-2t3">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="rdE-WP-FYQ">
+                                <rect key="frame" x="67" y="408" width="240" height="63"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="240" id="HFt-Pk-EnA"/>
+                                    <constraint firstAttribute="height" constant="63" id="Tlo-o0-fQk"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="My Favorite Movies" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XFF-kR-5nV">
+                                <rect key="frame" x="106" y="423" width="163.5" height="32"/>
+                                <fontDescription key="fontDescription" name="Noteworthy-Bold" family="Noteworthy" pointSize="20"/>
+                                <color key="textColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="camera" translatesAutoresizingMaskIntoConstraints="NO" id="a84-uD-ET8">
+                                <rect key="frame" x="112" y="258.5" width="150" height="150"/>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="150" id="aIC-pA-baU"/>
+                                    <constraint firstAttribute="width" constant="150" id="umg-2P-Z1S"/>
+                                </constraints>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="camera" translatesAutoresizingMaskIntoConstraints="NO" id="MhL-hD-VGd">
+                                <rect key="frame" x="137" y="479" width="100" height="100"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="100" id="lBS-5H-ktW"/>
+                                    <constraint firstAttribute="height" constant="100" id="xbu-6I-dvL"/>
+                                </constraints>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Film Filled" translatesAutoresizingMaskIntoConstraints="NO" id="bk0-pq-HU8">
+                                <rect key="frame" x="16" y="51" width="100" height="100"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="100" id="CPq-zK-ieF"/>
+                                    <constraint firstAttribute="height" constant="100" id="G7J-VB-Vud"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="a84-uD-ET8" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="9zv-en-2Xh"/>
+                            <constraint firstAttribute="leadingMargin" secondItem="bk0-pq-HU8" secondAttribute="leading" id="Kof-5V-M30"/>
+                            <constraint firstItem="MhL-hD-VGd" firstAttribute="centerX" secondItem="rdE-WP-FYQ" secondAttribute="centerX" id="LKx-QQ-haV"/>
+                            <constraint firstItem="a84-uD-ET8" firstAttribute="centerY" secondItem="Ze5-6b-2t3" secondAttribute="centerY" id="O2O-5j-eEO"/>
+                            <constraint firstItem="MhL-hD-VGd" firstAttribute="top" secondItem="rdE-WP-FYQ" secondAttribute="bottom" constant="8" id="U76-pe-a8G"/>
+                            <constraint firstItem="XFF-kR-5nV" firstAttribute="centerX" secondItem="rdE-WP-FYQ" secondAttribute="centerX" id="c0c-x2-IN7"/>
+                            <constraint firstItem="rdE-WP-FYQ" firstAttribute="top" secondItem="a84-uD-ET8" secondAttribute="bottom" constant="-0.5" id="tIG-Bx-SfG"/>
+                            <constraint firstItem="XFF-kR-5nV" firstAttribute="centerY" secondItem="rdE-WP-FYQ" secondAttribute="centerY" id="uo0-A8-KFg"/>
+                            <constraint firstItem="rdE-WP-FYQ" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="wXv-2K-IkP"/>
+                            <constraint firstItem="bk0-pq-HU8" firstAttribute="top" secondItem="Llm-lL-Icb" secondAttribute="bottom" constant="51" id="woa-Lf-Ztz"/>
+                        </constraints>
                     </view>
+                    <nil key="simulatedStatusBarMetrics"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="iYj-Kq-Ea1" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="53" y="375"/>
+            <point key="canvasLocation" x="52" y="374.66266866566718"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="Film Filled" width="100" height="100"/>
+        <image name="camera" width="100" height="100"/>
+    </resources>
 </document>

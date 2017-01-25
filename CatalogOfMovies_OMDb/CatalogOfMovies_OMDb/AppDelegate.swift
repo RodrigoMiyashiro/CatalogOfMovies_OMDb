@@ -17,6 +17,18 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
+        
+        UINavigationBar.appearance().barTintColor = UIColor.red
+        UINavigationBar.appearance().tintColor = UIColor.white
+        UINavigationBar.appearance().backIndicatorImage = UIImage(named: "ic_back")
+        UINavigationBar.appearance().backIndicatorTransitionMaskImage = UIImage(named: "ic_back")
+        
+        UITabBar.appearance().barTintColor = UIColor.red.withAlphaComponent(0.4)
+        UITabBar.appearance().tintColor = UIColor.white
+        
+        UIApplication.shared.isStatusBarHidden = false
+        UIApplication.shared.statusBarStyle = UIStatusBarStyle.lightContent
+        
         return true
     }
 

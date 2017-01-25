@@ -7,9 +7,10 @@
 //
 
 import Foundation
+import  JSONJoy
 
 
-class Movie {
+class Movie: JSONJoy {
     
     var title: String
     var year: String
@@ -23,7 +24,7 @@ class Movie {
     var language: String
     var country: String
     var awards: String
-    var poster: String
+    var poster: (String, NSData)
     var metascore: String
     var imdbRating: String
     var imdbVotes: String
@@ -45,12 +46,34 @@ class Movie {
         language = ""
         country = ""
         awards = ""
-        poster = ""
+        poster = ("", NSData())
         metascore = ""
         imdbRating = ""
         imdbVotes = ""
         imdbID = ""
         type = ""
         response = ""
+    }
+    
+    required init(_ decoder: JSONDecoder) throws {
+        title = try decoder["Title"].get()
+        year = try decoder["Year"].get()
+        released = try decoder["Released"].get()
+        runtime = try decoder["Runtime"].get()
+        genre = try decoder["Genre"].get()
+        director = try decoder["Director"].get()
+        writer = try decoder["Writer"].get()
+        actors = try decoder["Actors"].get()
+        plot = try decoder["Plot"].get()
+        language = try decoder["Language"].get()
+        country = try decoder["Country"].get()
+        awards = try decoder["Awards"].get()
+        poster = (try decoder["Poster"].get(), NSData())
+        metascore = try decoder["Metascore"].get()
+        imdbRating = try decoder["imdbRating"].get()
+        imdbVotes = try decoder["imdbVotes"].get()
+        imdbID = try decoder["imdbID"].get()
+        type = try decoder["Type"].get()
+        response = try decoder["Response"].get()
     }
 }
